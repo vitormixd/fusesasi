@@ -1,0 +1,33 @@
+<SASi.Page ux:Class="HomePage">
+	<Router ux:Dependency="router" />
+
+	<JavaScript File="HomePage.js" />
+
+	<DockPanel>
+		<Grid ColumnCount="1" RowCount="1" Dock="Bottom">
+			<SASi.Button Text="Edit Personal Information" Clicked="{goToPinfo}" />
+		</Grid>
+
+		<SASi.Text FontSize="30" TextAlignment="Center" Dock="Top" Margin="0,50">Your Vehicles</SASi.Text>
+
+		<ScrollView>
+			<StackPanel>
+				<Rectangle ux:Class="Separator" Height="1" Fill="#fff4" />
+
+				<Each Items="{vehicles}">
+					<Separator />
+
+					<Panel HitTestMode="LocalBoundsAndChildren" Clicked="{goToVehicle}">
+						<SASi.Text Value="{vyear} {vmake} {vmodel}" Margin="20" />
+
+						<WhilePressed>
+							<Scale Factor=".95" Duration=".08" Easing="QuadraticOut" />
+						</WhilePressed>
+					</Panel>
+				</Each>
+
+				<Separator />
+			</StackPanel>
+		</ScrollView>
+	</DockPanel>
+</SASi.Page>

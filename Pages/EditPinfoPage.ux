@@ -1,0 +1,44 @@
+<SASi.Page ux:Class="EditPinfoPage">
+	<Router ux:Dependency="router" />
+
+	<JavaScript File="EditPinfoPage.js" />
+
+	<DockPanel>
+		<Grid ColumnCount="2" Dock="Bottom">
+			<SASi.Button Text="Cancel" Clicked="{cancelpinfo}" />
+			<SASi.Button Text="Save" Clicked="{savepinfo}" />
+		</Grid>
+
+		<ScrollView>
+			<StackPanel ItemSpacing="10" Padding="10">
+				<SASi.Text ux:Class="PinfoText" Opacity=".6" Margin="0,0,0,5" />
+
+				<StackPanel>
+					<PinfoText>First and Last Name:</PinfoText>
+					<SASi.TextBox Value="{flname}" />
+				</StackPanel>
+
+				<StackPanel>
+					<PinfoText>Phone Number:</PinfoText>
+					<SASi.TextBox Value="{phonenumber}" />
+				</StackPanel>
+
+				<StackPanel>
+					<PinfoText>Email Address:</PinfoText>
+					<SASi.TextBox Value="{email}" />
+				</StackPanel>
+
+				<StackPanel>
+					<PinfoText>Address for Vehicle Pick-up:</PinfoText>
+					<SASi.TextBox Value="{pickup}" />
+				</StackPanel>
+
+				<StackPanel>
+					<PinfoText>Gate Code:</PinfoText>
+					<SASi.TextBox Value="{gatecode}" />
+				</StackPanel>
+			</StackPanel>
+
+		</ScrollView>
+	</DockPanel>
+</SASi.Page>

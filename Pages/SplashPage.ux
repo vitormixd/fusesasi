@@ -1,0 +1,22 @@
+<Page ux:Class="SplashPage">
+	<Router ux:Dependency="router" />
+
+	<JavaScript File="SplashPage.js" />
+
+	<DockPanel ClipToBounds="true">
+		<Video Layer="Background" File="../Assets/nature.mp4" IsLooping="true" AutoPlay="true" StretchMode="UniformToFill" Opacity="0.5">
+			<Blur Radius="4.75" />
+		</Video>
+
+		<SASi.Text Dock="Bottom" Margin="10" Opacity=".5" TextAlignment="Center" FontSize="12">Baby Text Here</SASi.Text>
+
+		<Grid RowCount="2">
+			<StackPanel Alignment="VerticalCenter">
+				<SASi.Text Alignment="HorizontalCenter" FontSize="70">SASi</SASi.Text>
+				<SASi.Text Alignment="HorizontalCenter" Opacity=".5">Life Automated</SASi.Text>
+			</StackPanel>
+
+			<SASi.Button Text="Get Started" FontSize="18" Margin="50,0" Alignment="VerticalCenter" Clicked="{goToHomePage}" />
+		</Grid>
+	</DockPanel>
+</Page>
