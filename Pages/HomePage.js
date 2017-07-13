@@ -5,13 +5,13 @@ function goToVehicle(arg) {
 	router.push("editVehicle", vehicle);
 }
 
-function goToPinfo() {
-	router.goto("editPinfo");
+function goToPinfo(args) {
+	router.push("editPinfo", args.data);
 }
 
 module.exports = {
 	vehicles: Context.vehicles,
-	pinfos: Context.pinfos,
+	pinfos: Context.pinfos.first(),
 
 	goToVehicle: goToVehicle,
 	goToPinfo: goToPinfo
