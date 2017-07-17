@@ -5,31 +5,74 @@
 
 	<DockPanel>
 		<Grid ColumnCount="1" RowCount="1" Dock="Bottom">
-			<With Data="{pinfos}">
 				<SASi.Button Text="Edit Personal Information" Clicked="{goToPinfo}" />
-			</With>	
 		</Grid>
 
 		<SASi.Text FontSize="30" TextAlignment="Center" Dock="Top" Margin="0,50">Your Vehicles</SASi.Text>
 
-		<ScrollView>
+		
+
 			<StackPanel>
-				<Rectangle ux:Class="Separator" Height="1" Fill="#fff4" />
-
-				<Each Items="{vehicles}">
-					<Separator />
-
-					<Panel HitTestMode="LocalBoundsAndChildren" Clicked="{goToVehicle}">
-						<SASi.Text Value="{vyear} {vmake} {vmodel}" Margin="20" />
+				<Rectangle ux:Class="Separator1" Height="1" Fill="#fff4" />
+				<Separator1 />
+					<Panel HitTestMode="LocalBoundsAndChildren" Clicked="{goToVehicle1}">
+						<SASi.Text Value="{vyear1} {vmake1} {vmodel1}" Margin="20" />
 
 						<WhilePressed>
 							<Scale Factor=".95" Duration=".08" Easing="QuadraticOut" />
 						</WhilePressed>
 					</Panel>
-				</Each>
+			
 
-				<Separator />
+			
+				<Rectangle ux:Class="Separator2" Height="1" Fill="#fff4" />
+				<Separator2 />
+					<Panel HitTestMode="LocalBoundsAndChildren" Clicked="{goToVehicle2}">
+						<SASi.Text Value="{vyear2} {vmake2} {vmodel2}" Margin="20" />
+
+						<WhilePressed>
+							<Scale Factor=".95" Duration=".08" Easing="QuadraticOut" />
+						</WhilePressed>
+					</Panel>
+			
+
+			
+				<Rectangle ux:Class="Separator3" Height="1" Fill="#fff4" />
+				<Separator3 />
+					<Panel HitTestMode="LocalBoundsAndChildren" Clicked="{goToVehicle3}">
+						<SASi.Text Value="{vyear3} {vmake3} {vmodel3}" Margin="20" />
+
+						<WhilePressed>
+							<Scale Factor=".95" Duration=".08" Easing="QuadraticOut" />
+						</WhilePressed>
+					</Panel>
+			
+
+			
+				<Rectangle ux:Class="Separator4" Height="1" Fill="#fff4" />
+				<Separator4 />
+					<Panel HitTestMode="LocalBoundsAndChildren" Clicked="{goToVehicle4}">
+						<SASi.Text Value="{vyear4} {vmake4} {vmodel4}" Margin="20" />
+
+						<WhilePressed>
+							<Scale Factor=".95" Duration=".08" Easing="QuadraticOut" />
+						</WhilePressed>
+					</Panel>
+			
+
+			
+				<Rectangle ux:Class="Separator5" Height="1" Fill="#fff4" />
+				<Separator5 />
+					<Panel HitTestMode="LocalBoundsAndChildren" Clicked="{goToVehicle5}">
+						<SASi.Text Value="{vyear5} {vmake5} {vmodel5}" Margin="20" />
+
+						<WhilePressed>
+							<Scale Factor=".95" Duration=".08" Easing="QuadraticOut" />
+						</WhilePressed>
+					</Panel>
+					<Separator5 />
 			</StackPanel>
-		</ScrollView>
+
+		
 	</DockPanel>
 </SASi.Page>

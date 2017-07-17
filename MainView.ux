@@ -8,8 +8,17 @@
 		<Navigator DefaultPath="splash">
 			<SplashPage ux:Template="splash" router="router" />
 			<HomePage ux:Template="home" router="router" />
-			<EditVehiclePage ux:Template="editVehicle" router="router" />
+			<EditVehiclePage1 ux:Template="editVehicle1" router="router" />
+			<EditVehiclePage2 ux:Template="editVehicle2" router="router" />
+			<EditVehiclePage3 ux:Template="editVehicle3" router="router" />
+			<EditVehiclePage4 ux:Template="editVehicle4" router="router" />
+			<EditVehiclePage5 ux:Template="editVehicle5" router="router" />
 			<EditPinfoPage ux:Template="editPinfo" router="router" />
+			<SelectServicePage1 ux:Template="selectService1" router="router" />
+			<SelectServicePage2 ux:Template="selectService2" router="router" />
+			<SelectServicePage3 ux:Template="selectService3" router="router" />
+			<SelectServicePage4 ux:Template="selectService4" router="router" />
+			<SelectServicePage5 ux:Template="selectService5" router="router" />
 		</Navigator>
 	</ClientPanel>
 </App>
