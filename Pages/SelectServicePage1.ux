@@ -1,0 +1,170 @@
+<SASi.Page ux:Class="SelectServicePage1">
+	<Router ux:Dependency="router" />
+
+	<JavaScript File="SelectServicePage1.js" />
+
+	<DockPanel>
+		<SASi.Text FontSize="30" TextAlignment="Center" Dock="Top" Margin="0,40">Select Services</SASi.Text>
+		<Grid ColumnCount="2" Dock="Bottom">
+			<SASi.Button Text="Cancel" Clicked="{cancelService1}" />
+			<SASi.Button Text="Confirm" Clicked="{confirmService1}" />
+		</Grid>
+
+
+
+		<ScrollView>
+			<Grid ColumnCount="3" RowCount="7" Dock="Top">
+				<SASi.TransButton Text="Trip Charge" ColumnSpan="2" />
+				<SASi.TransButton Text="$50" />
+
+				<Panel ux:Name="Button1" Margin="10" Padding="10" ColumnSpan="2" Clicked="{gasClick}">
+
+					<Rectangle Layer="Background" CornerRadius="2">
+						<DropShadow Angle="90" Distance="1" Spread="0.2" Size="2" Color="#00000060" />
+					</Rectangle>
+
+					<SASi.Text Value="Fill Gas Tank" FontSize="20" TextAlignment="Center" />
+
+					<WhilePressed>
+						<Scale Factor=".95" Duration=".08" Easing="QuadraticOut" />
+					</WhilePressed>
+
+					<StateGroup ux:Name="stateGroup1">
+							<State ux:Name="unSelected1">
+								<Change Button1.Color="#124F63" Duration="0.2"/>
+							</State>
+							<State ux:Name="Selected1">
+								<Change Button1.Color="#128F63" Duration="0.2"/>
+							</State>
+					</StateGroup>
+
+					<Clicked>
+							<TransitionState Type="Next" Target="stateGroup1" />
+					</Clicked>
+
+				</Panel>
+
+				<SASi.TransButton Text="$15*" />
+				
+				<Panel ux:Name="Button2" Margin="10" Padding="10" ColumnSpan="2" Clicked="{gasClick}">
+
+					<Rectangle Layer="Background" CornerRadius="2">
+						<DropShadow Angle="90" Distance="1" Spread="0.2" Size="2" Color="#00000060" />
+					</Rectangle>
+
+					<SASi.Text Value="Car Wash / Vaccum" FontSize="20" TextAlignment="Center" />
+
+					<WhilePressed>
+						<Scale Factor=".95" Duration=".08" Easing="QuadraticOut" />
+					</WhilePressed>
+
+					<StateGroup ux:Name="stateGroup2">
+							<State ux:Name="unSelected2">
+								<Change Button2.Color="#124F63" Duration="0.2"/>
+							</State>
+							<State ux:Name="Selected2">
+								<Change Button2.Color="#128F63" Duration="0.2"/>
+							</State>
+					</StateGroup>
+
+					<Clicked>
+							<TransitionState Type="Next" Target="stateGroup2" />
+					</Clicked>
+
+				</Panel>
+
+				<SASi.TransButton Text="$20" />
+
+				<Panel ux:Name="Button3" Margin="10" Padding="10" ColumnSpan="2" Clicked="{gasClick}">
+
+					<Rectangle Layer="Background" CornerRadius="2">
+						<DropShadow Angle="90" Distance="1" Spread="0.2" Size="2" Color="#00000060" />
+					</Rectangle>
+
+					<SASi.Text Value="Rotate Tires" FontSize="20" TextAlignment="Center" />
+
+					<WhilePressed>
+						<Scale Factor=".95" Duration=".08" Easing="QuadraticOut" />
+					</WhilePressed>
+
+					<StateGroup ux:Name="stateGroup3">
+							<State ux:Name="unSelected3">
+								<Change Button3.Color="#124F63" Duration="0.2"/>
+							</State>
+							<State ux:Name="Selected3">
+								<Change Button3.Color="#128F63" Duration="0.2"/>
+							</State>
+					</StateGroup>
+
+					<Clicked>
+							<TransitionState Type="Next" Target="stateGroup3" />
+					</Clicked>
+
+				</Panel>
+
+				<SASi.TransButton Text="$20" />
+
+				<Panel ux:Name="Button4" Margin="10" Padding="10" ColumnSpan="2" Clicked="{gasClick}">
+
+					<Rectangle Layer="Background" CornerRadius="2">
+						<DropShadow Angle="90" Distance="1" Spread="0.2" Size="2" Color="#00000060" />
+					</Rectangle>
+
+					<SASi.Text Value="Change Oil" FontSize="20" TextAlignment="Center" />
+
+					<WhilePressed>
+						<Scale Factor=".95" Duration=".08" Easing="QuadraticOut" />
+					</WhilePressed>
+
+					<StateGroup ux:Name="stateGroup4">
+							<State ux:Name="unSelected4">
+								<Change Button4.Color="#124F63" Duration="0.2"/>
+							</State>
+							<State ux:Name="Selected4">
+								<Change Button4.Color="#128F63" Duration="0.2"/>
+							</State>
+					</StateGroup>
+
+					<Clicked>
+							<TransitionState Type="Next" Target="stateGroup4" />
+					</Clicked>
+
+				</Panel>
+
+				<SASi.TransButton Text="$75" />
+
+				<Panel ux:Name="Button5" Margin="10" Padding="10" ColumnSpan="2" Clicked="{gasClick}">
+
+					<Rectangle Layer="Background" CornerRadius="2">
+						<DropShadow Angle="90" Distance="1" Spread="0.2" Size="2" Color="#00000060" />
+					</Rectangle>
+
+					<SASi.Text Value="Detail Interior" FontSize="20" TextAlignment="Center" />
+
+					<WhilePressed>
+						<Scale Factor=".95" Duration=".08" Easing="QuadraticOut" />
+					</WhilePressed>
+
+					<StateGroup ux:Name="stateGroup5">
+							<State ux:Name="unSelected5">
+								<Change Button5.Color="#124F63" Duration="0.2"/>
+							</State>
+							<State ux:Name="Selected5">
+								<Change Button5.Color="#128F63" Duration="0.2"/>
+							</State>
+					</StateGroup>
+
+					<Clicked>
+							<TransitionState Type="Next" Target="stateGroup5" />
+					</Clicked>
+
+				</Panel>
+
+				<SASi.TransButton Text="$80" />
+				<SASi.TransButton Text="Total Cost:" ColumnSpan="2" />
+				<SASi.TransButton Text="{totalCost}" />
+			</Grid>
+
+		</ScrollView>
+	</DockPanel>
+</SASi.Page>

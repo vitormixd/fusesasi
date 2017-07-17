@@ -1,0 +1,14 @@
+<Panel ux:Class="SASi.TransButton" Margin="10" Padding="10" FontSize="20">
+	<string ux:Property="Text" />
+	<float ux:Property="FontSize" />
+
+	<Rectangle Layer="Background" CornerRadius="2">
+		<DropShadow Angle="90" Distance="1" Spread="0.2" Size="2" Color="#00000060" />
+	</Rectangle>
+
+	<SASi.Text Value="{ReadProperty Text}" FontSize="{ReadProperty FontSize}" TextAlignment="Center" />
+
+	<WhilePressed>
+		<Scale Factor=".95" Duration=".08" Easing="QuadraticOut" />
+	</WhilePressed>
+</Panel>

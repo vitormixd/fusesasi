@@ -1,0 +1,47 @@
+<SASi.Page ux:Class="EditVehiclePage1">
+	<Router ux:Dependency="router" />
+
+	<JavaScript File="EditVehiclePage1.js" />
+
+	<DockPanel>
+		<Grid ColumnCount="2" RowCount="2" Dock="Bottom">
+			<SASi.Button Text="Order Services for this Vehicle" ColumnSpan="2" Clicked="{goToSelections1}" />
+			<SASi.Button Text="Cancel" Clicked="{cancel1}" />
+			<SASi.Button Text="Save" Clicked="{save1}" />
+		</Grid>
+
+		<ScrollView>
+
+			<StackPanel ItemSpacing="10" Padding="10">
+				<SASi.Text ux:Class="TitleText1" Opacity=".6" Margin="0,0,0,5" />
+
+				<StackPanel>
+					<TitleText1>Vehicle Year:</TitleText1>
+					<SASi.TextBox Value="{vyear1}" />
+				</StackPanel>
+
+				<StackPanel>
+					<TitleText1>Vehicle Make:</TitleText1>
+					<SASi.TextBox Value="{vmake1}" />
+				</StackPanel>
+
+				<StackPanel>
+					<TitleText1>Vehicle Model:</TitleText1>
+					<SASi.TextBox Value="{vmodel1}" />
+				</StackPanel>
+
+				<StackPanel>
+					<TitleText1>Prefered Fuel Type:</TitleText1>
+					<SASi.TextBox Value="{fueltype1}" />
+				</StackPanel>
+
+				<StackPanel>
+					<TitleText1>Prefered Oil Type:</TitleText1>
+					<SASi.TextBox Value="{oiltype1}" />
+				</StackPanel>
+
+			</StackPanel>
+
+		</ScrollView>
+	</DockPanel>
+</SASi.Page>

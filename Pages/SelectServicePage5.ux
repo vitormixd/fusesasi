@@ -1,0 +1,29 @@
+<SASi.Page ux:Class="SelectServicePage5">
+	<Router ux:Dependency="router" />
+
+	<JavaScript File="SelectServicePage5.js" />
+
+	<DockPanel>
+		<Grid ColumnCount="2" Dock="Bottom">
+			<SASi.Button Text="Cancel" Clicked="{cancelService5}" />
+			<SASi.Button Text="Confirm" Clicked="{confirmService5}" />
+		</Grid>
+
+		<ScrollView>
+			<Grid ColumnCount="3" RowCount="6" Dock="Top">
+				<SASi.Button Text="Trip Charge" ColumnSpan="2" />
+				<SASi.Button Text="$50" />
+				<SASi.Button Text="Fill Gas Tank" ColumnSpan="2" />
+				<SASi.Button Text="$15*" />
+				<SASi.Button Text="Car Wash / Vaccum" ColumnSpan="2" />
+				<SASi.Button Text="$20" />
+				<SASi.Button Text="Rotate Tires" ColumnSpan="2" />
+				<SASi.Button Text="$20" />
+				<SASi.Button Text="Change Oil" ColumnSpan="2" />
+				<SASi.Button Text="$75" />
+				<SASi.Button Text="Detail Interior" ColumnSpan="2" />
+				<SASi.Button Text="$80" />
+			</Grid>
+		</ScrollView>
+	</DockPanel>
+</SASi.Page>
