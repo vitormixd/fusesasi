@@ -33,6 +33,9 @@
 
 					<Clicked>
 							<TransitionState Type="Next" Target="stateGroupMon" />
+							<Set stateGroupTues.Active="unSelectedTues"/>
+							<Set stateGroupWed.Active="unSelectedWed"/>
+							<Set stateGroupThurs.Active="unSelectedThurs"/>
 					</Clicked>
 
 				</Panel>
@@ -59,6 +62,9 @@
 
 					<Clicked>
 							<TransitionState Type="Next" Target="stateGroupTues" />
+							<Set stateGroupMon.Active="unSelectedMon"/>
+							<Set stateGroupWed.Active="unSelectedWed"/>
+							<Set stateGroupThurs.Active="unSelectedThurs"/>
 					</Clicked>
 
 				</Panel>
@@ -85,6 +91,9 @@
 
 					<Clicked>
 							<TransitionState Type="Next" Target="stateGroupWed" />
+							<Set stateGroupTues.Active="unSelectedTues"/>
+							<Set stateGroupMon.Active="unSelectedMon"/>
+							<Set stateGroupThurs.Active="unSelectedThurs"/>
 					</Clicked>
 
 				</Panel>
@@ -111,6 +120,9 @@
 
 					<Clicked>
 							<TransitionState Type="Next" Target="stateGroupThurs" />
+							<Set stateGroupTues.Active="unSelectedTues"/>
+							<Set stateGroupWed.Active="unSelectedWed"/>
+							<Set stateGroupMon.Active="unSelectedMon"/>
 					</Clicked>
 
 				</Panel>
