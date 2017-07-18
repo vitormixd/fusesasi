@@ -63,6 +63,15 @@ function save5() {
 }
 
 function goToSelections5() {
+	var StoreObjectVehicle5 = {
+		vyear5: vyear5.value,
+		vmake5: vmake5.value,
+		vmodel5: vmodel5.value,
+		fueltype5: fueltype5.value,
+		oiltype5: oiltype5.value
+	};
+
+    Storage.write(v5Data, JSON.stringify(StoreObjectVehicle5));
 	router.push("selectService5");
 }
 

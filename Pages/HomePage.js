@@ -129,22 +129,27 @@ Storage.read(v5Data).then(
 });
 
 function goToVehicle1() {
+
 	router.push("editVehicle1");
 }
 
 function goToVehicle2() {
+
 	router.push("editVehicle2");
 }
 
 function goToVehicle3() {
+
 	router.push("editVehicle3");
 }
 
 function goToVehicle4() {
+
 	router.push("editVehicle4");
 }
 
 function goToVehicle5() {
+
 	router.push("editVehicle5");
 }
 

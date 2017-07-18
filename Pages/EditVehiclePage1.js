@@ -63,7 +63,18 @@ function save1() {
 }
 
 function goToSelections1() {
+
+	var StoreObjectVehicle1 = {
+		vyear1: vyear1.value,
+		vmake1: vmake1.value,
+		vmodel1: vmodel1.value,
+		fueltype1: fueltype1.value,
+		oiltype1: oiltype1.value
+	};
+
+    Storage.write(v1Data, JSON.stringify(StoreObjectVehicle1));
 	router.push("selectService1");
+	
 }
 
 module.exports = {
