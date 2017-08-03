@@ -8,7 +8,7 @@
 			<Blur Radius="4.75" />
 		</Video>
 
-		<SASi.Text Dock="Bottom" Margin="10" Opacity=".5" TextAlignment="Center" FontSize="12">Baby Text Here</SASi.Text>
+		<SASi.Text Dock="Bottom" Margin="10" Opacity=".5" TextAlignment="Center" FontSize="12">Strong Automated Systems</SASi.Text>
 
 		<Grid RowCount="2">
 			<StackPanel Alignment="VerticalCenter">

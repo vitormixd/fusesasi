@@ -2,11 +2,11 @@ var Observable = require("FuseJS/Observable");
 var Storage = require("FuseJS/Storage");
 
 var pData = "pData.json";
-var	flname = Observable("John Doe");
-var	phonenumber = Observable("480-834-4554");
-var	email = Observable("first.last@gmail.com");
-var	pickup = Observable("3539 E. Presidio Cir Mesa, AZ 85213");
-var	gatecode = Observable("#1234");
+var	flname = Observable("");
+var	phonenumber = Observable("");
+var	email = Observable("");
+var	pickup = Observable("");
+var	gatecode = Observable("");
 
 Storage.read(pData).then(
 	function(content) {
@@ -37,7 +37,7 @@ Storage.read(pData).then(
 
 function cancelpinfo() {
 	// Refresh personal information value to reset dependent Observables' values
-	router.goBack();
+	router.goto("home");
 }
 
 function savepinfo() {
@@ -52,7 +52,7 @@ function savepinfo() {
 
     Storage.write(pData, JSON.stringify(StoreObjectPinfo));
 
-	router.goBack();
+	router.goto("home");
 }
 
 

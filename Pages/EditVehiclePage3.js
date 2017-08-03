@@ -6,8 +6,8 @@ var v3Data = "v3Data.json";
 var	vyear3 = Observable("Add");
 var	vmake3 = Observable("New");
 var	vmodel3 = Observable("Vehicle");
-var	fueltype3 = Observable("Unleaded/Plus/Premium/Diesel");
-var	oiltype3 = Observable("5W-20/0W-20/I Don't Know");
+var	fueltype3 = Observable("");
+var	oiltype3 = Observable("");
 
 Storage.read(v3Data).then(
 	function(content) {

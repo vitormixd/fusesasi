@@ -29,7 +29,7 @@
 				</StackPanel>
 
 				<StackPanel>
-					<PinfoText>Address for Vehicle Pick-up:</PinfoText>
+					<PinfoText>Full Address for Vehicle Pick-up:</PinfoText>
 					<SASi.TextBox Value="{pickup}" />
 				</StackPanel>
 

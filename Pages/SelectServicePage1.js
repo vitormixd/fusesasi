@@ -1,7 +1,7 @@
 var Observable = require("FuseJS/Observable");
 var Storage = require("FuseJS/Storage");
 var Timer = require("FuseJS/Timer")
-//var email = require('FuseJS/Email');
+var email = require('FuseJS/Email');
 
 
 var pData = "pData.json";
@@ -19,8 +19,8 @@ var	fueltype1 = Observable("---");
 var	oiltype1 = Observable("---");
 
 
-
-var tripCharge = Observable(50);
+var dolla = Observable("$");
+var tripCharge = Observable(60);
 var fillGasTank = Observable(0);
 var carWashVaccum = Observable(0);
 var rotateTires = Observable(0);
@@ -81,7 +81,7 @@ function tireClick() {
            debug_log(tireEmail.value);
         } else {
             tireCount += 1;
-            rotateTires.value = 20;
+            rotateTires.value = 30;
             tireEmail = Observable("Rotate Tires");
             totalCost.value = tripCharge.value+fillGasTank.value+carWashVaccum.value+rotateTires.value+changeOil.value+detailInterior.value;
             debug_log(tireCount);
@@ -101,7 +101,7 @@ function oilClick() {
            debug_log(oilEmail.value);
         } else {
             oilCount += 1;
-            changeOil.value = 75;
+            changeOil.value = 60;
             oilEmail = Observable("Change Oil");
             totalCost.value = tripCharge.value+fillGasTank.value+carWashVaccum.value+rotateTires.value+changeOil.value+detailInterior.value;
             debug_log(oilCount);
@@ -129,7 +129,7 @@ function detailClick() {
         }
 }
 
-function cancelService1() {
+function cancelService() {
 	router.goBack();
 }
 
@@ -148,11 +148,13 @@ function thursClick() {
     date.value = "Thursday";
 }
 
-var sasiEmail = Observable("Edit Next");
-var subject = Observable("Edit Next");
+var sasiEmail = Observable("sasi.ordered.services@gmail.com");
 var bodyMessage = [];
 
-function confirmService1() {
+function confirmService() {
+
+if (totalCost.value != 50 && (date.value == "Monday" || date.value == "Tuesday" || date.value == "Wednesday" || date.value == "Thursday")) {
+
     Storage.read(pData).then(
     function(content) {
     debug_log("Content Found in pData");
@@ -163,14 +165,7 @@ function confirmService1() {
     email1.value = data.email;
     pickup.value = data.pickup;
     gatecode.value = data.gatecode;
-   },
-   function(error) {
-    //For now, let's expect the error to be because of the file not being found.
-    debug_log("No Storage File Found");
-    flname.value = "No";
-    phonenumber.value = "Storage";
-    email1.value = "Found";
-    });
+
 
     Storage.read(v1Data).then(
     function(content) {
@@ -223,13 +218,23 @@ function confirmService1() {
 
     Timer.create(function(){
     debug_log("Wait 100mili");
-    debug_log(JSON.stringify(bodyMessage));
-	//email.compose(sasiEmail,"","",subject,bodyMessage)
-	//router.goto("home");
+	email.compose(sasiEmail.value,"","",date.value, JSON.stringify(bodyMessage))
+    debug_log(sasiEmail.value, date.value, JSON.stringify(bodyMessage));
+	router.goto("home");
     }, 100, false);
+       },
+   function(error) {
+    //For now, let's expect the error to be because of the file not being found.
+    debug_log("No Storage File Found");
+    router.goto("editPinfo");
+    });
+} else {
+    debug_log("No date and/or services selected")
+    }
 }
 
 module.exports = {
+    dolla: dolla,
     tripCharge: tripCharge,
     fillGasTank: fillGasTank,
     carWashVaccum: carWashVaccum,
@@ -250,6 +255,6 @@ module.exports = {
 
     totalCost: totalCost,
 
-	cancelService1: cancelService1,
-	confirmService1: confirmService1
+	cancelService: cancelService,
+	confirmService: confirmService
 };
