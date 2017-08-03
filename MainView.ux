@@ -14,6 +14,7 @@
 			<EditVehiclePage4 ux:Template="editVehicle4" router="router" />
 			<EditVehiclePage5 ux:Template="editVehicle5" router="router" />
 			<EditPinfoPage ux:Template="editPinfo" router="router" />
+			<ServiceInfo ux:Template="serviceInfo" router="router" />
 			<SelectServicePage1 ux:Template="selectService1" router="router" />
 			<SelectServicePage2 ux:Template="selectService2" router="router" />
 			<SelectServicePage3 ux:Template="selectService3" router="router" />

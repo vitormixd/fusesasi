@@ -4,7 +4,8 @@
 	<JavaScript File="HomePage.js" />
 
 	<DockPanel>
-		<Grid ColumnCount="1" RowCount="1" Dock="Bottom">
+		<Grid ColumnCount="1" RowCount="2" Dock="Bottom">
+				<SASi.Button Text="Service Information" Clicked="{goToServiceInfo}" />
 				<SASi.Button Text="Edit Personal Information" Clicked="{goToPinfo}" />
 		</Grid>
 

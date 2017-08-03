@@ -241,6 +241,10 @@ function goToPinfo() {
 	router.push("editPinfo");
 }
 
+function goToServiceInfo() {
+  router.push("serviceInfo");
+}
+
 module.exports = {
 
 	vyear1: vyear1,
@@ -269,5 +273,6 @@ module.exports = {
 	goToVehicle3: goToVehicle3,
 	goToVehicle4: goToVehicle4,
 	goToVehicle5: goToVehicle5,
-	goToPinfo: goToPinfo
+	goToPinfo: goToPinfo,
+  goToServiceInfo: goToServiceInfo
 };
