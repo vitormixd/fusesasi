@@ -1,0 +1,18 @@
+<SASi.Page ux:Class="Info5">
+	<Router ux:Dependency="router" />
+
+	<JavaScript File="Info5.js" />
+
+
+	<DockPanel>	
+
+		<Grid ColumnCount="1" RowCount="1" Dock="Bottom">
+				<SASi.Button Text="Back" Clicked="{goBack}" />
+		</Grid>
+
+		<SASi.Text FontSize="30" TextAlignment="Center" Dock="Top" Margin="0,50">Getting Started</SASi.Text>
+
+		<TextView Value="{bodytext}" TextAlignment="Center" TextColor="White" Margin="20" TextWrapping="Wrap" />
+
+	</DockPanel>
+</SASi.Page>

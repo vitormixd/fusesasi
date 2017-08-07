@@ -20,6 +20,11 @@
 			<SelectServicePage3 ux:Template="selectService3" router="router" />
 			<SelectServicePage4 ux:Template="selectService4" router="router" />
 			<SelectServicePage5 ux:Template="selectService5" router="router" />
+			<Info1 ux:Template="info1" router="router" />
+			<Info2 ux:Template="info2" router="router" />
+			<Info3 ux:Template="info3" router="router" />
+			<Info4 ux:Template="info4" router="router" />
+			<Info5 ux:Template="info5" router="router" />
 		</Navigator>
 	</ClientPanel>
 </App>

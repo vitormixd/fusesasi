@@ -6,23 +6,23 @@ var Timer = require("FuseJS/Timer")
 
 
 function goTo1() {
-  router.push("home");
+  router.push("info1");
 }
 
 function goTo2() {
-  router.push("home");
+  router.push("info2");
 }
 
 function goTo3() {
-  router.push("home");
+  router.push("info3");
 }
 
 function goTo4() {
-  router.push("home");
+  router.push("info4");
 }
 
 function goTo5() {
-  router.push("home");
+  router.push("info5");
 }
 
 function goToHome() {

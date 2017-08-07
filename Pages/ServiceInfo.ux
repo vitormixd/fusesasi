@@ -8,7 +8,7 @@
 				<SASi.Button Text="Back" Clicked="{goToHome}" />
 		</Grid>
 
-		<SASi.Text FontSize="30" TextAlignment="Center" Dock="Top" Margin="0,50">Your Vehicles</SASi.Text>
+		<SASi.Text FontSize="30" TextAlignment="Center" Dock="Top" Margin="0,50">Information</SASi.Text>
 
 		
 
@@ -16,7 +16,7 @@
 				<Rectangle ux:Class="Separator6" Height="1" Fill="#fff4" />
 				<Separator6 />
 					<Panel HitTestMode="LocalBoundsAndChildren" Clicked="{goTo1}">
-						<SASi.Text Value="Info 1" Margin="20" />
+						<SASi.Text Value="Getting Started" Margin="20" />
 
 						<WhilePressed>
 							<Scale Factor=".95" Duration=".08" Easing="QuadraticOut" />
@@ -28,7 +28,7 @@
 				<Rectangle ux:Class="Separator7" Height="1" Fill="#fff4" />
 				<Separator7 />
 					<Panel HitTestMode="LocalBoundsAndChildren" Clicked="{goTo2}">
-						<SASi.Text Value="Info 2" Margin="20" />
+						<SASi.Text Value="Fill Gas Tank" Margin="20" />
 
 						<WhilePressed>
 							<Scale Factor=".95" Duration=".08" Easing="QuadraticOut" />
@@ -40,7 +40,7 @@
 				<Rectangle ux:Class="Separator8" Height="1" Fill="#fff4" />
 				<Separator8 />
 					<Panel HitTestMode="LocalBoundsAndChildren" Clicked="{goTo3}">
-						<SASi.Text Value="Info 3" Margin="20" />
+						<SASi.Text Value="Car Wash and Vaccum" Margin="20" />
 
 						<WhilePressed>
 							<Scale Factor=".95" Duration=".08" Easing="QuadraticOut" />
@@ -52,7 +52,7 @@
 				<Rectangle ux:Class="Separator9" Height="1" Fill="#fff4" />
 				<Separator9 />
 					<Panel HitTestMode="LocalBoundsAndChildren" Clicked="{goTo4}">
-						<SASi.Text Value="Info 4" Margin="20" />
+						<SASi.Text Value="Rotate Tires" Margin="20" />
 
 						<WhilePressed>
 							<Scale Factor=".95" Duration=".08" Easing="QuadraticOut" />
@@ -64,7 +64,7 @@
 				<Rectangle ux:Class="Separator10" Height="1" Fill="#fff4" />
 				<Separator10 />
 					<Panel HitTestMode="LocalBoundsAndChildren" Clicked="{goTo5}">
-						<SASi.Text Value="Info 5" Margin="20" />
+						<SASi.Text Value="Change Oil" Margin="20" />
 
 						<WhilePressed>
 							<Scale Factor=".95" Duration=".08" Easing="QuadraticOut" />
