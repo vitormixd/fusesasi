@@ -1,7 +1,7 @@
 var Observable = require("FuseJS/Observable");
 
 var bodytext = Observable(
-  "This is the body of the text right here This is the body of the text right here"
+  "If this service is selected, your vehicle will be run through a car wash and towel-dried as well as have the interior of the vehicle vacuumed. The cost of this service is $20"
 );
 
 

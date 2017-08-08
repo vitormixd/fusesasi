@@ -5,13 +5,14 @@
 
 	<DockPanel>	
 
-		<Grid ColumnCount="1" RowCount="1" Dock="Bottom">
+		<Grid ColumnCount="1" RowCount="2" Dock="Bottom">
+				<SASi.Button Text="Call Now" Clicked="{callUs}"/>
 				<SASi.Button Text="Back" Clicked="{goBack}" />
 		</Grid>
 
-		<SASi.Text FontSize="30" TextAlignment="Center" Dock="Top" Margin="0,50">Getting Started</SASi.Text>
+		<SASi.Text FontSize="30" TextAlignment="Center" Dock="Top" Margin="0,30">Getting Started</SASi.Text>
 
-		<TextView Value="{bodytext}" TextAlignment="Center" TextColor="White" Margin="20" TextWrapping="Wrap" />
+		<TextView Value="{bodytext}" TextAlignment="Center" TextColor="White" Margin="20,0" TextWrapping="Wrap" />
 
 	</DockPanel>
 </SASi.Page>

@@ -40,7 +40,7 @@
 				<Rectangle ux:Class="Separator8" Height="1" Fill="#fff4" />
 				<Separator8 />
 					<Panel HitTestMode="LocalBoundsAndChildren" Clicked="{goTo3}">
-						<SASi.Text Value="Car Wash and Vaccum" Margin="20" />
+						<SASi.Text Value="Car Wash and Vacuum" Margin="20" />
 
 						<WhilePressed>
 							<Scale Factor=".95" Duration=".08" Easing="QuadraticOut" />

@@ -1,7 +1,7 @@
 var Observable = require("FuseJS/Observable");
 
 var bodytext = Observable(
-  "This is the body of the text right here This is the body of the text right here"
+  "If this service is selected, your vehicle’s oil will be drained and replaced with the manufactured suggested oil unless otherwise specified in the Vehicle Information Page. The cost of this service is $65"
 );
 
 
