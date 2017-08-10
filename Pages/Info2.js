@@ -1,7 +1,7 @@
 var Observable = require("FuseJS/Observable");
 
 var bodytext = Observable(
-  "If this service is selected, your gas tank will be filled to the brim with the fuel type you have specified on the Vehicle Page. We charge the cost of the fill plus $15 dollars. We will provide the receipt along with our vehicle report on your passenger seat."
+  "If this service is selected, your gas tank will be filled with the fuel type you have specified on the Vehicle Information Page. We will provide the receipt from the gas station along with our vehicle report on your passenger seat. The cost of this service is $15 plus the cost of the fuel."
 );
 
 
