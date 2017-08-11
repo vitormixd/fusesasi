@@ -46,7 +46,7 @@
 						<DropShadow Angle="90" Distance="1" Spread="0.2" Size="2" Color="#00000060" />
 					</Rectangle>
 
-					<SASi.Text Value="Car Wash/Vacuum $20" FontSize="20" TextAlignment="Center"  Alignment="Center" />
+					<SASi.Text Value="Car Wash/Vacuum $25" FontSize="20" TextAlignment="Center"  Alignment="Center" />
 
 					<WhilePressed>
 						<Scale Factor=".95" Duration=".08" Easing="QuadraticOut" />
@@ -75,7 +75,7 @@
 						<DropShadow Angle="90" Distance="1" Spread="0.2" Size="2" Color="#00000060" />
 					</Rectangle>
 
-					<SASi.Text Value="Rotate Tires $30" FontSize="20" TextAlignment="Center"  Alignment="Center" />
+					<SASi.Text Value="Rotate Tires $25" FontSize="20" TextAlignment="Center"  Alignment="Center" />
 
 					<WhilePressed>
 						<Scale Factor=".95" Duration=".08" Easing="QuadraticOut" />

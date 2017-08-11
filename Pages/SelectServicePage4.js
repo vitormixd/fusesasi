@@ -20,7 +20,7 @@ var	oiltype4 = Observable("---");
 
 
 var dolla = Observable("$");
-var tripCharge = Observable(60);
+var tripCharge = Observable(75);
 var fillGasTank = Observable(0);
 var carWashVaccum = Observable(0);
 var rotateTires = Observable(0);
@@ -61,7 +61,7 @@ function washClick() {
            debug_log(washEmail.value);
         } else {
             washCount += 1;
-            carWashVaccum.value = 20;
+            carWashVaccum.value = 25;
             washEmail = Observable("Car Wash / Vaccum");
             totalCost.value = tripCharge.value+fillGasTank.value+carWashVaccum.value+rotateTires.value+changeOil.value+detailInterior.value;
             debug_log(washCount);
@@ -81,7 +81,7 @@ function tireClick() {
            debug_log(tireEmail.value);
         } else {
             tireCount += 1;
-            rotateTires.value = 30;
+            rotateTires.value = 25;
             tireEmail = Observable("Rotate Tires");
             totalCost.value = tripCharge.value+fillGasTank.value+carWashVaccum.value+rotateTires.value+changeOil.value+detailInterior.value;
             debug_log(tireCount);
@@ -153,7 +153,7 @@ var bodyMessage = [];
 
 function confirmService() {
 
-if (totalCost.value != 50 && (date.value == "Monday" || date.value == "Tuesday" || date.value == "Wednesday" || date.value == "Thursday")) {
+if (totalCost.value != 75 && (date.value == "Monday" || date.value == "Tuesday" || date.value == "Wednesday" || date.value == "Thursday")) {
 
     Storage.read(pData).then(
     function(content) {
